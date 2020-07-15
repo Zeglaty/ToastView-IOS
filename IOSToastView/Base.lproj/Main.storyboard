@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xPf-cJ-Bc1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSToastView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9S-UD-Us5">
+                                <rect key="frame" x="20" y="712" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rxy-mA-hjp"/>
+                                </constraints>
+                                <state key="normal" title="Go to Toast Screen: Show">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="042-vC-cMr" kind="show" id="UBJ-Za-9CL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9N-Pj-yYQ">
+                                <rect key="frame" x="20" y="782" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RjW-SI-eqN"/>
+                                </constraints>
+                                <state key="normal" title="Go to Toast Screen: Present Modily">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="042-vC-cMr" kind="presentation" id="1Pr-hY-8W6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="league_of_legends_32" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-dP-hmL">
+                                <rect key="frame" x="81" y="211" width="252" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="CKg-53-Vm4"/>
+                                    <constraint firstAttribute="height" constant="224" id="dqg-J1-ebg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j9N-Pj-yYQ" secondAttribute="trailing" constant="20" id="9ij-qy-7IC"/>
+                            <constraint firstItem="j9N-Pj-yYQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HC8-GZ-Tpv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9S-UD-Us5" secondAttribute="trailing" constant="20" id="MS6-jH-gUc"/>
+                            <constraint firstItem="Gkt-dP-hmL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MXt-7l-AhM"/>
+                            <constraint firstItem="j9N-Pj-yYQ" firstAttribute="top" secondItem="F9S-UD-Us5" secondAttribute="bottom" constant="20" id="bMc-6S-QlI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j9N-Pj-yYQ" secondAttribute="bottom" constant="30" id="hzC-WQ-N5r"/>
+                            <constraint firstItem="Gkt-dP-hmL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="iaT-xN-7BV"/>
+                            <constraint firstItem="F9S-UD-Us5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ulE-cc-BXk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gFX-Yk-0mO"/>
+                    <connections>
+                        <outlet property="ModilyButton" destination="j9N-Pj-yYQ" id="9xy-rm-5eY"/>
+                        <outlet property="showButton" destination="F9S-UD-Us5" id="kDZ-YC-RvI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wD7-1R-thb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xPf-cJ-Bc1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PUh-Oi-mrJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PGA-dz-E0B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug6-eF-A72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Toast View Controller-->
+        <scene sceneID="143-oW-wPy">
+            <objects>
+                <viewController id="042-vC-cMr" customClass="ToastViewController" customModule="IOSToastView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E1D-7N-8F3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-lC-wB3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="298"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWg-4D-mbV">
+                                        <rect key="frame" x="20" y="218" width="374" height="54"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="SwA-QQ-ucK"/>
+                                        </constraints>
+                                        <state key="normal" title="UIView Toast">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showViewToast:" destination="042-vC-cMr" eventType="touchUpInside" id="RkM-Lj-mtn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="CWg-4D-mbV" secondAttribute="bottom" constant="26" id="XPy-hy-axP"/>
+                                    <constraint firstAttribute="trailing" secondItem="CWg-4D-mbV" secondAttribute="trailing" constant="20" id="nwW-BP-u8C"/>
+                                    <constraint firstItem="CWg-4D-mbV" firstAttribute="leading" secondItem="WUX-lC-wB3" secondAttribute="leading" constant="20" id="xto-Vr-pdU"/>
+                                    <constraint firstAttribute="height" constant="298" id="yqL-YK-3Ho"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5T-TF-eup">
+                                <rect key="frame" x="20" y="778" width="374" height="54"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="dfK-3Z-lTt"/>
+                                </constraints>
+                                <state key="normal" title="UIViewController Toast &amp; Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showVCToastAndDismiss:" destination="042-vC-cMr" eventType="touchUpInside" id="JPs-vp-1xF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohm-EB-vrf">
+                                <rect key="frame" x="20" y="714" width="374" height="54"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="zEp-Ft-JMz"/>
+                                </constraints>
+                                <state key="normal" title="UIViewController Toast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showVCToast:" destination="042-vC-cMr" eventType="touchUpInside" id="UK7-1y-4sY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l5T-TF-eup" firstAttribute="top" secondItem="Ohm-EB-vrf" secondAttribute="bottom" constant="10" id="24w-KD-ajX"/>
+                            <constraint firstItem="sId-F5-Rxv" firstAttribute="trailing" secondItem="l5T-TF-eup" secondAttribute="trailing" constant="20" id="HzG-Jk-H2S"/>
+                            <constraint firstItem="WUX-lC-wB3" firstAttribute="trailing" secondItem="sId-F5-Rxv" secondAttribute="trailing" id="RUN-sd-TBV"/>
+                            <constraint firstItem="sId-F5-Rxv" firstAttribute="bottom" secondItem="l5T-TF-eup" secondAttribute="bottom" constant="30" id="VLX-oX-zBM"/>
+                            <constraint firstItem="l5T-TF-eup" firstAttribute="leading" secondItem="sId-F5-Rxv" secondAttribute="leading" constant="20" id="dUd-ce-vMr"/>
+                            <constraint firstItem="WUX-lC-wB3" firstAttribute="leading" secondItem="sId-F5-Rxv" secondAttribute="leading" id="fQf-hd-fvX"/>
+                            <constraint firstItem="WUX-lC-wB3" firstAttribute="top" secondItem="sId-F5-Rxv" secondAttribute="top" id="mbX-Yc-IiI"/>
+                            <constraint firstItem="sId-F5-Rxv" firstAttribute="trailing" secondItem="Ohm-EB-vrf" secondAttribute="trailing" constant="20" id="rCy-ht-5gg"/>
+                            <constraint firstItem="Ohm-EB-vrf" firstAttribute="leading" secondItem="sId-F5-Rxv" secondAttribute="leading" constant="20" id="rra-AG-obR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sId-F5-Rxv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wJ4-rJ-E4T"/>
+                    <connections>
+                        <outlet property="redView" destination="WUX-lC-wB3" id="bC9-xs-2pq"/>
+                        <outlet property="viewControllerButton" destination="Ohm-EB-vrf" id="f8H-mO-t6y"/>
+                        <outlet property="viewControllerWithDismissButton" destination="l5T-TF-eup" id="jFI-sO-y2G"/>
+                        <outlet property="viewToastButton" destination="CWg-4D-mbV" id="AbN-M4-izM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHY-cw-xax" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857.9710144927537" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UBJ-Za-9CL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="league_of_legends_32" width="255" height="256"/>
+    </resources>
+</document>
